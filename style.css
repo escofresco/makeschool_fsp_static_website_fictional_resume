@@ -1,0 +1,35 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.section {
+    height: 100%;
+    position: fixed;
+    top: 0
+}
+
+.middle-section {
+    margin: auto;
+    top: 50%;
+    position: absolute;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.left {
+    width: calc(100% * calc(1 - 0.61803398875)); /* Golden ratio works nicely here */
+    left: 0;
+    text-align: center;
+}
+
+.right {
+    width: calc(100% * 0.61803398875); /* Golden ratio works nicely here */
+    right: 0;
+}
+
+#profile-photo {
+    height: auto;
+    width: calc(100% - 20%);
+    padding: 10%;
+}
